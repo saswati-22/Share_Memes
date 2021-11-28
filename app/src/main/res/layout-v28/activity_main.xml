@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imoji"
+        android:layout_width="50pt"
+        android:layout_height="match_parent"
+        android:layout_above="@id/imageView"
+        android:src="@drawable/ic_baseline_sentiment_very_satisfied_24"
+        android:outlineSpotShadowColor="@color/white">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_laugh"
+        android:textSize="20pt"
+        >
+
+    </TextView>
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150pt"
+        android:paddingBottom="20pt"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5pt"
+        android:layout_centerInParent="true"
+        tools:srcCompat="@tools:sample/avatars">
+
+
+    </ImageView>
+
+    <android.widget.ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:outlineSpotShadowColor="@color/purple_500"
+        style="?attr/progressBarStyle">
+
+
+
+    </android.widget.ProgressBar>
+
+
+
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:srcCompat="@tools:sample/avatars" />-->
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progress"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/imageView"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/imageView"-->
+    <!--        app:layout_constraintLeft_toLeftOf="@id/imageView"-->
+    <!--        app:layout_constraintRight_toRightOf="@id/imageView">-->
+    <!--        -->
+
+    <!--    </ProgressBar>-->
+
+
+
+    <Button
+        android:layout_marginTop="5pt"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="shareme"
+        android:text="@string/share"
+        android:textSize="20sp"
+        app:backgroundTint="#689F38"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="375dp"
+        android:onClick="clickme"
+        android:text="Next"
+        android:textSize="24sp"
+        app:backgroundTint="#E11818" />
+
+</RelativeLayout>
